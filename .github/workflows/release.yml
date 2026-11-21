@@ -1,0 +1,14 @@
+name: Release Plugin
+
+on:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  release:
+    permissions:
+      id-token: write
+      attestations: write
+      contents: write
+    uses: mmoboy/hero-armory-sdk/.github/workflows/build-plugin.yml@v1
