@@ -49,7 +49,7 @@ if [[ -n "$SDK_LOCAL" && -f "$SDK_LOCAL/go.mod" ]]; then
     GOWORK=off go run ./cmd/pack -dir "$STAGE" -out "$DIST/client_plugin.gtpack"
   )
 else
-  go run github.com/mmoboy/hero-armory-sdk/cmd/pack@v1.0.0 -dir "$STAGE" -out "$DIST/client_plugin.gtpack"
+  go run github.com/mmoboy/hero-armory-sdk/cmd/pack@v1.1.0 -dir "$STAGE" -out "$DIST/client_plugin.gtpack"
 fi
 
 rm -rf "$STAGE"
