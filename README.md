@@ -13,18 +13,19 @@ Actions build provenance verification.
    - `version`: semver matching your release tag without the `v` prefix (for example `"1.0.0"` for tag `v1.0.0`)
    - `sdk_version`: `1`
 3. Implement your game content in `server/main.go`, `client/main.go`, and `assets/`.
-4. Keep `.github/workflows/release.yml` calling:
+4. Add showcase PNG/JPG images under `screenshots/` (excluded from `.gtpack`, displayed on the Hero Armory website and desktop client for Source-Verified GitHub releases directly from the attested commit).
+5. Keep `.github/workflows/release.yml` calling:
    `mmoboy/hero-armory-sdk/.github/workflows/build-plugin.yml@v1`
-5. Tag and push a release:
+6. Tag and push a release:
    ```bash
    git add -A && git commit -m "Release v1.0.0"
    git tag v1.0.0
    git push origin main v1.0.0
    ```
-6. Once the GitHub Actions workflow finishes (free for public repositories),
+7. Once the GitHub Actions workflow finishes (free for public repositories),
    sign into `https://kmmo.enlumis.com/plugins`, submit your GitHub repo URL +
    `v1.0.0`, and publish it with a **Source-Verified** badge linking directly to
-   the immutable build commit.
+   the immutable build commit and commit-pinned screenshots.
 
 ## Local Development Build
 
