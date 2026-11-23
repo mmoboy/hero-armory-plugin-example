@@ -2,7 +2,7 @@
   "sdk_version": 1,
   "id": "realm_bounty",
   "name": "Realm Bounty Board",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "author": "Hero Armory SDK Example",
   "description": "Adds Bounty Guild starter origins during hero creation, a HUD Realm Bounty Board with rotating challenges and Gilded Stalker boss hunts, plus a Wasm Sandbox audit view.",
   "entry_wasm": "client.wasm",
