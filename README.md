@@ -12,6 +12,7 @@ Actions build provenance verification.
    - `id`: unique 3..40 lowercase `[a-z0-9_-]` plugin slug
    - `version`: semver matching your release tag without the `v` prefix (for example `"1.0.6"` for tag `v1.0.6`)
    - `sdk_version`: `1`
+   - `icon`: `"icon.png"` (replace the root `icon.png` with your own square PNG icon, max **256x256** px and <= 128 KiB, displayed in the Plugins Library and Host Server configuration)
 3. Implement your game content in `server/main.go`, `client/main.go`, and `assets/`
    (this example includes Bounty Guild starter origins via `sdk.CharacterCreatePlugin`
    in `vanilla_extended` mode alongside rotating challenges, custom 3D bosses/ore

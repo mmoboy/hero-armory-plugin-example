@@ -6,7 +6,7 @@
   "author": "Hero Armory SDK Example",
   "description": "Adds Bounty Guild starter origins during hero creation, a HUD Realm Bounty Board with rotating challenges and Gilded Stalker boss hunts, plus a Wasm Sandbox audit view.",
   "entry_wasm": "client.wasm",
-  "icon": "assets/bounty_icon.png",
+  "icon": "icon.png",
   "permissions": ["hud_actions", "overlay_ui", "packets", "audio"],
   "required": false
 }

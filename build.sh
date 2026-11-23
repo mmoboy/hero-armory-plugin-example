@@ -38,6 +38,9 @@ echo "[plugin-example] Building client.wasm..."
     go build -buildmode=c-shared -trimpath -ldflags="-s -w" -o "$STAGE/client.wasm" ./client
 )
 cp "$DIR/manifest.json" "$STAGE/manifest.json"
+if [[ -f "$DIR/icon.png" ]]; then
+  cp "$DIR/icon.png" "$STAGE/icon.png"
+fi
 if [[ -d "$DIR/assets" ]]; then
   cp -r "$DIR/assets" "$STAGE/assets"
 fi
